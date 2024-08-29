@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Shop Homepage v5.0.6 (https://startbootstrap.com/template/shop-homepage)
+* Copyright 2013-2023 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+.navbar {
+    background-color: #00aff0; /* Cor de fundo da navbar, altere conforme necessário */
+}
+
+
+
+/* Define o fundo da página com imagem e gradiente */
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.674), 
+        rgba(44, 159, 216, 0.645)
+    ), url('https://wallpaperaccess.com/full/299976.jpg'); /* Substitua pelo URL da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa durante o rolar */
+    color: #ffffff; /* Define a cor padrão do texto (ajuste conforme necessário) */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+}
+
+/* Define a cor do texto da navbar */
+.navbar-brand,
+.nav-link {
+    color: #ffffff; /* Cor do texto, altere conforme necessário */
+    font-weight: bold;
+}
+.card-img-top {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do card */
+    height: 200px; /* Defina a altura desejada */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço do card sem distorcer */
+    border-radius: 0.5rem;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px; /* Ajuste conforme necessário */
+}
+
+/* Adiciona um espaçamento consistente ao redor das colunas */
+.row > .col-md-4, .row > .col-lg-6 {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Garantir que o input-group-text e o input estejam alinhados */
+.input-group {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center; /* Alinha o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    font-size: 1.25rem; /* Ajuste conforme necessário */
+    padding: 0.4rem 0.5rem; /* Ajuste para adicionar mais espaço ao redor do ícone */
+}
+
+.input-group-text i {
+    margin: 0; /* Remove qualquer margem ao redor do ícone */
+    font-size: 1.5rem; /* Garante que o tamanho do ícone herde o tamanho do pai */
+    color: #00aff0;
+}
+
+
+.input-group .form-control {
+    border-radius: 0.5rem; /* Remove o arredondamento para uma borda uniforme */
+}
+
+
+h3 {
+    color: #ffff;
+    font-weight: bold;
+}
+
+/* Define a cor do texto dos itens de navegação */
+.navbar-nav .nav-item .nav-link {
+    color: #f8f9fa; 
+}
+
+.navbar-brand:hover {
+    color: #16223e; 
+}
+
+/* Define a cor do texto quando o item de navegação está ativo */
+.navbar-nav .nav-item .nav-link.active {
+    color: #ffffff; 
+}
+
+/* Define a cor do texto quando o mouse passa sobre o item de navegação */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #16223e;
+}
+
+.btn-outline-success {
+    color: #16223e; /* Cor do texto do botão */
+    background-color: #ffffff; /* Cor de fundo do botão */
+    border-color: #ffffff; /* Cor da borda do botão */
+}
+
+.btn-outline-success:hover {
+    color: #ffffff; /* Cor do texto quando o mouse passa sobre o botão (branco) */
+    background-color: #16223e; /* Cor de fundo ao passar o mouse (azul mais escuro) */
+    border-color: #16223e; /* Cor da borda ao passar o mouse (azul mais escuro) */
+}
+
+
+.form-control {
+    background-color: transparent; /* Fundo transparente */
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+}
+
+
+
+/* Estilo para inputs do formulário ao passar o mouse */
+.form-control:hover {
+    border-color: #ffffff; 
+}
+
+/* Estilo para inputs do formulário quando em foco */
+.form-control:focus, .form-control:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); 
+    border-color: #ffffff; 
+}
+
+.form-control::placeholder {
+    color: #cccccc; 
+    opacity: 1; /* Define a opacidade do texto do placeholder */
+}
+
+.navbar-toggler:before {
+    color: #ffffff; /* Cor do ícone (branco) */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="%23ffffff" class="bi bi-list" viewBox="0 0 16 16"><path d="M2 3h12v1H2V3zM2 7h12v1H2V7zM2 11h12v1H2v-1z"/></svg>');
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #00aff0;
+    box-sizing: border-box;
+}
+
+
+footer > a {
+    display: inline-block;
+    justify-content: right;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+/* Estilo para ícones no rodapé */
+footer > i {
+    color: #ffffff; /* Cor dos ícones */
+    font-size: 2rem; /* Tamanho dos ícones */
+    margin: 0 1rem; /* Espaço entre os ícones */
+    transition: color 0.3s; /* Transição suave para cor ao passar o mouse */
+}
+
+/* Estilo para as imagens do rodapé */
+.footer-icon {
+    width: 28px; /* Ajuste a largura das imagens */
+    height: 28px; /* Ajuste a altura das imagens */
+    margin: 0 1rem; /* Espaço entre as imagens */
+    transition: transform 0.3s, opacity 0.3s; /* Transições suaves para efeitos de hover */
+}
+
+/* Efeito ao passar o mouse sobre as imagens */
+.footer-icon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho das imagens ao passar o mouse */
+    opacity: 0.8; /* Altera a opacidade ao passar o mouse */
+}
